@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cv Design</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="./app.css" /> -->
+    <style>
+      *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+body {
+/* background-color: rgb(247, 242, 242); */
+/* font-family: 'Poppins', sans-serif; */
+}
+
+ul {
+    padding: 0;
+}
+
+
+.cv-left{
+    background-color: #005C85;
+    padding: 25px 35px;
+    color: #fff;
+
+}
+
+.cv-left .img {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cv-left .img img{
+    width: 150px;
+    border-radius: 100px;
+}
+/* contact */
+.cv-left .contact-info h4 {
+    /* margin: 12px 0px; */
+    position: relative;
+}
+
+.cv-left .contact-info h4::after{
+    content: "";
+    height: 2px;
+    width: 90px;
+    background-color: #fff;
+    position: absolute;
+    top: 37px;
+    left: 0;
+}
+
+.cv-left .contact-info ul {
+    margin-top: 20px;
+}
+
+.cv-left .contact-info ul li {
+        /* color: #6a6b6c; */
+    line-height: 38px;
+}
+
+
+/* Skills */
+.skills-info h4 {
+    position: relative;
+}
+
+.skills-info h4::after{
+    content: "";
+    height: 2px;
+    width: 58px;
+    background-color: #fff;
+    position: absolute;
+    top: 37px;
+    left: -0px;
+}
+
+.skills-info .skills-badges {
+    margin-top: 30px;
+}
+
+.skills-info .skills-badges .badgee {
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 4px 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* languages */
+
+.languages-info{
+
+}
+
+.languages-info h4 {
+    position: relative;
+}
+
+.languages-info h4 {
+    margin: 25px 0px;
+}
+
+.languages-info .languages-badges {
+    line-height: 40px;
+}
+
+.languages-info h4::after{
+    content: "";
+    height: 2px;
+    width: 131px;
+    background-color: #fff;
+    position: absolute;
+    top: 37px;
+    left: 0px;
+}
+
+
+
+/* section-right */
+
+.section-right{
+    padding:25px;
+    /* background-color: #F4F7F8; */
+}
+
+.section-right .name {
+    padding: 25px 15px;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-right .name .line{
+    height: 3px;
+    width: 115px;
+    background-color: #000;
+    margin: 10px 0px;
+}
+
+.section-right .name h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 45px;
+    margin: 0;
+    
+}
+
+.section-right .name span {
+    text-transform: uppercase;
+    color: #616161;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* summary */
+.section-right .summary {
+    padding:25px;
+
+}
+
+.section-right .summary h4 { 
+    color: #07597F;
+    font-weight: 700;
+}
+
+.section-right .summary p { 
+    color: #6a6b6c;
+    line-height: 28px;
+}
+
+/*  */
+.section-right .experience {
+    padding: 0px 25px;
+
+}
+
+.section-right .experience h4 { 
+    color: #07597F;
+    font-weight: 700;
+}
+.section-right .experience span { 
+    color: #6a6b6c;
+    font-size: 16px;
+}
+
+
+/*  */
+
+.section-right .projects {
+    padding: 25px;
+}
+
+.section-right .projects h4 { 
+    color: #07597F;
+    font-weight: 700;
+}
+
+.section-right .projects span { 
+    color: #41464b;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-right .projects ul { 
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.section-right .projects ul li {
+        color: #6a6b6c; 
+   line-height: 30px;
+}
+
+
+/*  */
+
+.section-right .project-links {
+    padding: 0px 25px;
+}
+
+.section-right .project-links  ul {
+    padding: 0;
+}
+
+
+.section-right .project-links  h4 { 
+    color: #07597F;
+    font-weight: 700;
+}
+
+
+
+.section-right .project-links  ul li {
+        color: #6a6b6c; 
+    line-height: 38px;
+}
+
+
+/*  */
+
+.section-right .education {
+    padding: 0px 25px;
+
+}
+
+.section-right .education h4 { 
+    color: #07597F;
+    font-weight: 700;
+}
+
+
+.section-right .education .heading{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    color: #41464b;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row justify-content-center py-4">
+          <div class="col-md-10">
+            <div class="row gx-0">
+              <!-- section left -->
+              <div class="col-md-3" style=" background-color: #005C85;">
+                <div class="cv-left">
+                  <div class="img">
+                    <img
+                      src="./assets/media/1576045003397-removebg-preview.png"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <!-- Contact -->
+                  <div class="contact-info">
+                    <h4>CONTACT</h4>
+                    <ul>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-envelope"></i>
+                        <span>adila8854@gmail.com</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-mobile fa-2x"></i>
+                        <span>+923475310100</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-map-marker"></i>
+                        <span>G-11 Islamabad</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-linkedin"></i>
+                        <a style="text-decoration: none; color:#fff;" href="https://www.linkedin.com/in/adil-choudhary-269035143/">
+                          <span>adil-choudhary-269035143</span>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-github"></i>
+                        <a style="text-decoration: none; color:#fff;" href="https://github.com/adil113">
+                          <span>adil113</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- skills -->
+                  <div class="skills-info">
+                    <h4>SKILLS</h4>
+                    <div class="skills-badges">
+                      <div class="d-flex flex-column flex-wrap gap-3">
+                        <span class="badgee">HTML5</span>
+                        <span class="badgee">CSS</span>
+                        <span class="badgee">CSS3</span>
+                        <span class="badgee">Bootstrap4/5</span>
+                        <span class="badgee">JavaScript</span>
+                        <!-- <span class="badgee">Jquery</span> -->
+                        <span class="badgee">Angular5+</span>
+                        <span class="badgee">WordPress</span>
+                        <span class="badgee">Elementor</span>
+                        <span class="badgee">Git/Github</span>
+                        <span class="badgee">Responsive Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- skills -->
+                  <div class="languages-info">
+                    <h4 class="mt-3">LANGUAGES</h4>
+                    <div class="languages-badges">
+                      <div class="row align-items-center mt-1 gy-0">
+                        <span class="col-4">Urdu</span>
+                        <div class="col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Basic example"
+                            aria-valuenow="100"
+                            aria-valuemin="100"
+                            aria-valuemax="100"
+                          >
+                            <div class="progress-bar" style="width: 100%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-center mt-1">
+                      <span class="col-4">English</span>
+                      <div class="col-8">
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="50"
+                          aria-valuemin="50"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- section right -->
+              <div class="col-md-9">
+                <div
+                  class="section-right"
+                  style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px"
+                >
+                  <div class="name">
+                    <h1>Adil Ayoub</h1>
+                    <div class="line"></div>
+                    <span>Front End Developer</span>
+                  </div>
+                  <!-- summary -->
+                  <div class="summary">
+                    <h4>SUMMARY</h4>
+                    <p>
+                      Motivated front-end developer with experience in HTML,
+                      CSS, JavaScript, Bootstrap, Angular, Git/GitHub,
+                      WordPress, and Elementor. Skilled in building responsive
+                      web interfaces, converting Figma designs to HTML, and
+                      transforming PDFs into responsive web pages. Proficient in
+                      leveraging WordPress and Elementor for creating dynamic
+                      and visually appealing websites. Although I lack prior
+                      professional experience, I have successfully completed
+                      personal projects to showcase my abilities. Eager to
+                      contribute my skills and dedication to delivering
+                      high-quality, user-friendly web experiences. Excited to
+                      discuss how I can leverage my expertise as a front-end
+                      developer for your company.
+                    </p>
+                  </div>
+                  <!-- Experience -->
+                  <div class="experience">
+                    <h4>EXPERIENCE</h4>
+                    <span>No prior professional experience.</span>
+                  </div>
+                  <!-- Projects -->
+                  <div class="projects">
+                    <h4>PROJECTS</h4>
+                    <div class="">
+                      <span>Doctor Landing Page Design</span>
+                      <ul>
+                        <li>
+                          Designed and developed a responsive landing page for a
+                          doctor's website using HTML, CSS, and Bootstrap.
+                        </li>
+                        <li>
+                          Utilized Bootstrap framework to ensure mobile
+                          responsiveness and seamless compatibility across
+                          various devices and screen sizes.
+                        </li>
+                        <li>
+                          Implemented a clean and professional design that
+                          enhances the credibility and trustworthiness of the
+                          doctor's practice.
+                        </li>
+                        <li>
+                          Ensured cross-browser compatibility to guarantee
+                          consistent display and functionality across different
+                          web browsers.
+                        </li>
+                      </ul>
+                    </div>
+                    <!--  -->
+                    <div class="">
+                      <span>Loan Company Landing Page</span>
+                      <ul>
+                        <li>
+                          Designed and developed a professional landing page for
+                          an online loan company.
+                        </li>
+
+                        <li>
+                          Implemented a responsive layout to ensure seamless
+                          display across different devices and screen sizes.
+                        </li>
+                        <li>
+                          Highlighted key features and benefits of the loan
+                          company through a clean and structured design.
+                        </li>
+                        <li>
+                          Ensured cross-browser compatibility for consistent
+                          performance across various web browsers.
+                        </li>
+                      </ul>
+                    </div>
+                    <!--  -->
+                    <div class="">
+                      <span>Corporate Website Development</span>
+                      <ul>
+                        <li>
+                          Developed a professional corporate website using
+                          WordPress and Elementor.
+                        </li>
+
+                        <li>
+                          Created a comprehensive online presence for the
+                          corporate business, showcasing key information about
+                          the company.
+                        </li>
+                        <li>
+                          Utilized the flexibility and functionality of
+                          WordPress to build a dynamic and easily manageable
+                          website.
+                        </li>
+                        <li>
+                          Leveraged the drag-and-drop capabilities of Elementor
+                          to efficiently build and customize the website pages.
+                        </li>
+                        <li>
+                          Ensured seamless navigation and user experience by
+                          organizing and structuring the website content
+                          effectively.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Projects-links -->
+
+                  <div class="project-links">
+                    <h4>PROJECT LINKS</h4>
+                    <ul>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-link"></i>
+                        <a href="https://adil113.github.io/Loan-landing-page">https://adil113.github.io/Loan-landing-page</a>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-link"></i>
+                        <a href="https://adil113.github.io/Doctor-landing-page">https://adil113.github.io/Doctor-landing-page</a>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-link"></i>
+                        <a href="https://adil113.github.io/Buisness-website">https://adil113.github.io/Buisness-website</a>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-link"></i>
+                        <a href="https://adil113.github.io/Dashboardd">https://adil113.github.io/Dashboardd</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Education -->
+                  <div class="education">
+                    <h4>EDUCATION</h4>
+                    <div class="">
+                      <div class="d-flex justify-content-between">
+                        <span class="heading">Matric</span>
+                        <span>2014-2015</span>
+                      </div>
+                      <p>
+                        AJK Board of Intermediate & Secondary Education, Mirpur
+                      </p>
+                    </div>
+                    <div class="">
+                      <div class="d-flex justify-content-between">
+                        <span class="heading">Inter</span>
+                        <span>2018-2019</span>
+                      </div>
+                      <p>
+                        Federal Board of Intermediate and Secondary Education
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

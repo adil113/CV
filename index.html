@@ -26,262 +26,245 @@
     <!-- custom css -->
     <!-- <link rel="stylesheet" href="./app.css" /> -->
     <style>
-      *{
- margin: 0;
- padding: 0;
- box-sizing: border-box;   
-}
-body {
-/* background-color: rgb(247, 242, 242); */
-/* font-family: 'Poppins', sans-serif; */
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* background-color: rgb(247, 242, 242); */
+        /* font-family: 'Poppins', sans-serif; */
+      }
 
-ul {
-    padding: 0;
-}
+      ul {
+        padding: 0;
+      }
 
+      .cv-left {
+        background-color: #005c85;
+        padding: 25px 35px;
+        color: #fff;
+      }
 
-.cv-left{
-    background-color: #005C85;
-    padding: 25px 35px;
-    color: #fff;
+      .cv-left .img {
+        text-align: center;
+        margin-bottom: 25px;
+      }
 
-}
+      .cv-left .img img {
+        width: 150px;
+        border-radius: 100px;
+      }
+      /* contact */
+      .cv-left .contact-info h4 {
+        /* margin: 12px 0px; */
+        position: relative;
+      }
 
-.cv-left .img {
-    text-align: center;
-    margin-bottom: 25px;
-}
+      .cv-left .contact-info h4::after {
+        content: "";
+        height: 2px;
+        width: 90px;
+        background-color: #fff;
+        position: absolute;
+        top: 37px;
+        left: 0;
+      }
 
-.cv-left .img img{
-    width: 150px;
-    border-radius: 100px;
-}
-/* contact */
-.cv-left .contact-info h4 {
-    /* margin: 12px 0px; */
-    position: relative;
-}
+      .cv-left .contact-info ul {
+        margin-top: 20px;
+      }
 
-.cv-left .contact-info h4::after{
-    content: "";
-    height: 2px;
-    width: 90px;
-    background-color: #fff;
-    position: absolute;
-    top: 37px;
-    left: 0;
-}
-
-.cv-left .contact-info ul {
-    margin-top: 20px;
-}
-
-.cv-left .contact-info ul li {
+      .cv-left .contact-info ul li {
         /* color: #6a6b6c; */
-    line-height: 38px;
-}
+        line-height: 38px;
+      }
 
+      /* Skills */
+      .skills-info h4 {
+        position: relative;
+      }
 
-/* Skills */
-.skills-info h4 {
-    position: relative;
-}
+      .skills-info h4::after {
+        content: "";
+        height: 2px;
+        width: 58px;
+        background-color: #fff;
+        position: absolute;
+        top: 37px;
+        left: -0px;
+      }
 
-.skills-info h4::after{
-    content: "";
-    height: 2px;
-    width: 58px;
-    background-color: #fff;
-    position: absolute;
-    top: 37px;
-    left: -0px;
-}
+      .skills-info .skills-badges {
+        margin-top: 30px;
+      }
 
-.skills-info .skills-badges {
-    margin-top: 30px;
-}
+      .skills-info .skills-badges .badgee {
+        background-color: #fff;
+        border-radius: 100px;
+        padding: 4px 20px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+      }
 
-.skills-info .skills-badges .badgee {
-    background-color: #fff;
-    border-radius: 100px;
-    padding: 4px 20px;
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-}
+      /* languages */
 
-/* languages */
+      .languages-info {
+      }
 
-.languages-info{
+      .languages-info h4 {
+        position: relative;
+      }
 
-}
+      .languages-info h4 {
+        margin: 25px 0px;
+      }
 
-.languages-info h4 {
-    position: relative;
-}
+      .languages-info .languages-badges {
+        line-height: 40px;
+      }
 
-.languages-info h4 {
-    margin: 25px 0px;
-}
+      .languages-info h4::after {
+        content: "";
+        height: 2px;
+        width: 131px;
+        background-color: #fff;
+        position: absolute;
+        top: 37px;
+        left: 0px;
+      }
 
-.languages-info .languages-badges {
-    line-height: 40px;
-}
+      /* section-right */
 
-.languages-info h4::after{
-    content: "";
-    height: 2px;
-    width: 131px;
-    background-color: #fff;
-    position: absolute;
-    top: 37px;
-    left: 0px;
-}
+      .section-right {
+        padding: 25px;
+        /* background-color: #F4F7F8; */
+      }
 
+      .section-right .name {
+        padding: 25px 15px;
+        background: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
+      .section-right .name .line {
+        height: 3px;
+        width: 115px;
+        background-color: #000;
+        margin: 10px 0px;
+      }
 
-/* section-right */
+      .section-right .name h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 45px;
+        margin: 0;
+      }
 
-.section-right{
-    padding:25px;
-    /* background-color: #F4F7F8; */
-}
+      .section-right .name span {
+        text-transform: uppercase;
+        color: #616161;
+        font-size: 17px;
+        font-weight: 400;
+      }
 
-.section-right .name {
-    padding: 25px 15px;
-    background: #F5F5F5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+      /* summary */
+      .section-right .summary {
+        padding: 25px;
+      }
 
-.section-right .name .line{
-    height: 3px;
-    width: 115px;
-    background-color: #000;
-    margin: 10px 0px;
-}
+      .section-right .summary h4 {
+        color: #07597f;
+        font-weight: 700;
+      }
 
-.section-right .name h1 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 45px;
-    margin: 0;
-    
-}
+      .section-right .summary p {
+        color: #6a6b6c;
+        line-height: 28px;
+      }
 
-.section-right .name span {
-    text-transform: uppercase;
-    color: #616161;
-    font-size: 17px;
-    font-weight: 400;
-}
+      /*  */
+      .section-right .experience {
+        padding: 0px 25px;
+      }
 
-/* summary */
-.section-right .summary {
-    padding:25px;
+      .section-right .experience h4 {
+        color: #07597f;
+        font-weight: 700;
+      }
+      .section-right .experience span {
+        color: #6a6b6c;
+        font-size: 16px;
+      }
 
-}
+      /*  */
 
-.section-right .summary h4 { 
-    color: #07597F;
-    font-weight: 700;
-}
+      .section-right .projects {
+        padding: 25px;
+      }
 
-.section-right .summary p { 
-    color: #6a6b6c;
-    line-height: 28px;
-}
+      .section-right .projects h4 {
+        color: #07597f;
+        font-weight: 700;
+      }
 
-/*  */
-.section-right .experience {
-    padding: 0px 25px;
+      .section-right .projects span {
+        color: #41464b;
+        font-size: 18px;
+        font-weight: 700;
+      }
 
-}
+      .section-right .projects ul {
+        padding-left: 25px;
+        margin-top: 10px;
+      }
 
-.section-right .experience h4 { 
-    color: #07597F;
-    font-weight: 700;
-}
-.section-right .experience span { 
-    color: #6a6b6c;
-    font-size: 16px;
-}
+      .section-right .projects ul li {
+        color: #6a6b6c;
+        line-height: 30px;
+      }
 
+      /*  */
 
-/*  */
+      .section-right .project-links {
+        padding: 0px 25px;
+      }
 
-.section-right .projects {
-    padding: 25px;
-}
+      .section-right .project-links ul {
+        padding: 0;
+      }
 
-.section-right .projects h4 { 
-    color: #07597F;
-    font-weight: 700;
-}
+      .section-right .project-links h4 {
+        color: #07597f;
+        font-weight: 700;
+      }
 
-.section-right .projects span { 
-    color: #41464b;
-    font-size: 18px;
-    font-weight: 700;
-}
+      .section-right .project-links ul li {
+        color: #6a6b6c;
+        line-height: 38px;
+      }
 
-.section-right .projects ul { 
-    padding-left: 25px;
-    margin-top: 10px;
-}
+      /*  */
 
-.section-right .projects ul li {
-        color: #6a6b6c; 
-   line-height: 30px;
-}
+      .section-right .education {
+        padding: 0px 25px;
+      }
 
+      .section-right .education h4 {
+        color: #07597f;
+        font-weight: 700;
+      }
 
-/*  */
-
-.section-right .project-links {
-    padding: 0px 25px;
-}
-
-.section-right .project-links  ul {
-    padding: 0;
-}
-
-
-.section-right .project-links  h4 { 
-    color: #07597F;
-    font-weight: 700;
-}
-
-
-
-.section-right .project-links  ul li {
-        color: #6a6b6c; 
-    line-height: 38px;
-}
-
-
-/*  */
-
-.section-right .education {
-    padding: 0px 25px;
-
-}
-
-.section-right .education h4 { 
-    color: #07597F;
-    font-weight: 700;
-}
-
-
-.section-right .education .heading{
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0;
-    color: #41464b;
-}
+      .section-right .education .heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+        color: #41464b;
+      }
     </style>
   </head>
   <body>
@@ -291,7 +274,7 @@ ul {
           <div class="col-md-10">
             <div class="row gx-0">
               <!-- section left -->
-              <div class="col-md-3" style=" background-color: #005C85;">
+              <div class="col-md-3" style="background-color: #005c85">
                 <div class="cv-left">
                   <div class="img">
                     <img
@@ -317,13 +300,19 @@ ul {
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <i class="fa fa-linkedin"></i>
-                        <a style="text-decoration: none; color:#fff;" href="https://www.linkedin.com/in/adil-choudhary-269035143/">
+                        <a
+                          style="text-decoration: none; color: #fff"
+                          href="https://www.linkedin.com/in/adil-choudhary-269035143/"
+                        >
                           <span>adil-choudhary</span>
                         </a>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <i class="fa fa-github"></i>
-                        <a style="text-decoration: none; color:#fff;" href="https://github.com/adil113">
+                        <a
+                          style="text-decoration: none; color: #fff"
+                          href="https://github.com/adil113"
+                        >
                           <span>adil113</span>
                         </a>
                       </li>
@@ -419,7 +408,23 @@ ul {
                   <!-- Experience -->
                   <div class="experience">
                     <h4>EXPERIENCE</h4>
-                    <span>No prior professional experience.</span>
+                    <!-- <span>No prior professional experience.</span> -->
+                    <div>
+                      <div class="d-flex justify-content-between pb-2">
+                        <h6 class="heading fw-600">Arphez Technology</h6>
+                        <span>2022-2023</span>
+                      </div>
+                      <p>
+                        During my internship at Arhpez Technology, I actively
+                        contributed to the development of client-facing
+                        websites, gaining proficiency in HTML5, CSS3, and
+                        JavaScript. I collaborated with senior developers,
+                        practiced version control using Git, and focused on
+                        responsive design and bug resolution. This experience
+                        enhanced my problem-solving skills and commitment to
+                        staying updated with industry trends.
+                      </p>
+                    </div>
                   </div>
                   <!-- Projects -->
                   <div class="projects">
@@ -509,19 +514,27 @@ ul {
                     <ul>
                       <li class="d-flex align-items-center gap-2">
                         <i class="fa fa-link"></i>
-                        <a href="https://adil113.github.io/Loan-landing-page">https://adil113.github.io/Loan-landing-page</a>
+                        <a href="https://adil113.github.io/Loan-landing-page"
+                          >https://adil113.github.io/Loan-landing-page</a
+                        >
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <i class="fa fa-link"></i>
-                        <a href="https://adil113.github.io/Doctor-landing-page">https://adil113.github.io/Doctor-landing-page</a>
+                        <a href="https://adil113.github.io/Doctor-landing-page"
+                          >https://adil113.github.io/Doctor-landing-page</a
+                        >
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <i class="fa fa-link"></i>
-                        <a href="https://adil113.github.io/Buisness-website">https://adil113.github.io/Buisness-website</a>
+                        <a href="https://adil113.github.io/Buisness-website"
+                          >https://adil113.github.io/Buisness-website</a
+                        >
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <i class="fa fa-link"></i>
-                        <a href="https://adil113.github.io/Dashboardd">https://adil113.github.io/Dashboardd</a>
+                        <a href="https://adil113.github.io/Dashboardd"
+                          >https://adil113.github.io/Dashboardd</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -548,12 +561,12 @@ ul {
                     </div>
                     <div class="">
                       <div class="d-flex justify-content-between">
-                        <span class="heading"> Bachelor in Computer Science(BSCS)</span>
+                        <span class="heading">
+                          Bachelor in Computer Science(BSCS)</span
+                        >
                         <span>2020-2023</span>
                       </div>
-                      <p>
-                        Virtual University
-                      </p>
+                      <p>Virtual University</p>
                     </div>
                   </div>
                 </div>

@@ -253,3 +253,51 @@ ul {
     margin: 0;
     color: #41464b;
 }
+
+@media (max-width: 667px) {
+    .section-right {
+        padding: 0px!important;
+    }
+    .section-right .summary{
+      padding: 0;
+    }
+    .section-right .experience{
+      padding: 0;
+    }
+    .section-right .projects ul{
+      padding: 0;
+    }
+    .section-right .projects{
+      padding: 0;
+    }
+    
+    .section-right .name h1 {
+        font-size: 24px;
+    }
+    .section-right .name span{
+      font-size: 14px;
+    }
+    .section-right .education .heading {
+    font-size: 16px;
+    
+}
+    
+    .section-right .project-links {
+        padding: 0px!important;
+    }
+    .section-right .education{
+      padding: 0;
+    }
+
+    .section-right .education {
+    padding: 2px 0px 95px 0px;
+}
+
+
+.project-links a{
+font-size: 14px;
+}
+
+
+
+}
